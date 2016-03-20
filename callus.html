@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="ui/default/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="ui/default/css/index.css"/>
+<script src="ui/default/js/jquery-1.11.0.min.js"></script>
+<script src="ui/default/js/index.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qbIYODvTaehB31rdIdMoGE8I"></script>
+</head>
+<body>
+
+	<div class="head fc f16">
+    	<p class="logoImg l"><a href="javascript:void(0)"><img src="ui/default/images/logog.png" /></a></p>
+        
+        <ul class="l fc">
+        	<li><a href="index.html">首页</a></li>
+            <li><a href="about.html">公司简介</a></li>
+            <li><a href="joinus.html">诚聘英才</a></li>
+            <li><a href="guanyuwomen.html">关于我们</a></li>
+            <li><a href="callus.html">联系我们</a></li>
+        </ul>
+        
+        <p class="telImg r"><img src="ui/default/images/tel1.png" /></p>
+    </div>
+    <!--head end-->
+    
+    <div class="navMenubox fc">
+        <div class="navMenu">
+            <a href="javascript:void(0)"><span style="background:url(ui/default/images/adver1.png) center top no-repeat"></span></a>
+        </div>
+        <div class="navMenu">
+            <a href="javascript:void(0)"><span style="background:url(ui/default/images/adver2.jpg) center top no-repeat"></span></a>
+        </div>
+        <div class="navMenu">
+            <a href="javascript:void(0)"><span style="background:url(ui/default/images/adver3.jpg) center top no-repeat"></span></a>
+        </div>
+        <div class="navMenudian f_12 ffa fc">
+        	<ul class="navUl">
+            	<li class="selectImg"><a href="javascript:void(0)">1</a></li>
+                <li><a href="javascript:void(0)">2</a></li>
+                <li><a href="javascript:void(0)">3</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--navMenubox end-->
+    
+    <div class="content fc">
+        <div class="indexContitle23 fc">
+        	<p class="f16">联系我们</p>
+        </div>
+        <div class="zcCondetails f14 fc">
+        	<p class="zcCondetitle f16">联系我们</p>
+            <p class="zcConwenzhang">联系人HR：高经理</p>
+            <p class="zcConwenzhang">联系电话：18702733972</p>
+            <p class="zcConwenzhang">公司座机：027-59566624</p>
+            <p class="zcConwenzhang">公司地址：湖北省武汉市洪山区关山街道关山大道大学园路与华师北路交叉口光谷科技港10栋601</p>
+            <p class="zcConwenzhang">公司地图：</p>
+            <div id="allmap" style="width:780px;height:400px;margin-top:20px;margin-bottom:20px;"></div>
+        </div>
+    </div>
+    <!--content end-->
+
+    
+    
+    <div class="foot fc f14">
+    	<p class="footLsmalllogo l"><img src="ui/default/images/logog.png" /></p>
+        <p class="foot_Menu l"><a href="about.html">公司简介</a>|<a href="joinus.html">诚聘英才</a>|<a href="guanyuwomen.html">关于我们</a></p>
+        <p class="footRsmalltel r"><img src="ui/default/images/xiaotel.png" /></p>
+    </div>
+    
+    <div class="footer ffa">
+    	<p>Copyright 2015-2016 Beijing Culture Equity Exchange CO., LTD, All Rights Reserved</p>
+        <p>武汉玖珑基金有限公司 版权所有 经营许可证编号：鄂ICP证151108号 鄂ICP备15036450号-1</p>
+    </div>
+    <!--footer end-->
+    
+    
+</body>
+</html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(114.407127, 30.461235), 18);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+    map.setCurrentCity("武汉");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+</script>
